@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:DotaAnalyst"
+             x:Class="DotaAnalyst.pickChoicePage"
+             BackgroundColor="#1C1C1C">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+
+            <Button Text="{local:Translate PickChoicePageGoToPickButton}"
+                    TextColor="#FFFFFF"
+                    BackgroundColor="#303030"
+                    AbsoluteLayout.LayoutFlags="All"
+                    AbsoluteLayout.LayoutBounds="0.505,0.821,0.78,0.125"
+                    CornerRadius="30"
+                    BorderColor="#303030"
+                    BorderWidth="2"
+                    Clicked="onPickerClicked"
+            />
+
+            <Label Text="{local:Translate PickChoicePageName}"
+                   TextColor="#FFFFFF"
+                   BackgroundColor="Transparent"
+                   HorizontalTextAlignment="Center"
+                   MaxLines="2"
+                 
+                   LineBreakMode="WordWrap"
+                   
+                   AbsoluteLayout.LayoutFlags="All"
+                   AbsoluteLayout.LayoutBounds="0.51,0.07,0.56,0.07"
+            />
+
+            <Label Text="{local:Translate PickChoicePageChoiceLabel}"
+                   TextColor="#FFFFFF"
+                   BackgroundColor="Transparent"
+                   HorizontalTextAlignment="Center"
+                   MaxLines="2"
+                   LineBreakMode="WordWrap"
+                   
+                   AbsoluteLayout.LayoutFlags="All"
+                   AbsoluteLayout.LayoutBounds="0.5,0.31,0.5,0.03"
+            />
+
+            <Label Text="{local:Translate PickChoicePageFirstPickLabel}"
+                   TextColor="#FFFFFF"
+                   BackgroundColor="Transparent"
+                   HorizontalTextAlignment="Center"
+                   MaxLines="2"
+                   LineBreakMode="WordWrap"
+                   
+                   AbsoluteLayout.LayoutFlags="All"
+                   AbsoluteLayout.LayoutBounds="0.5,0.47,0.5,0.03"
+            />
+            <local:ToggleButton
+                x:Name="RadiantButton"
+                
+                BackgroundColor="#303030"
+                CornerRadius="30"
+               
+                BorderColor="#303030"
+                BorderWidth="1"
+                
+                TextColor="White"
+                Text="{local:Translate PickChoicePageRadiantButton}"
+                
+                AbsoluteLayout.LayoutFlags="All"
+                AbsoluteLayout.LayoutBounds="0.169,0.373,0.34,0.08"
+                
+                IsToggled="True"
+                Clicked="onRadiantClicked"
+            />
+
+            <local:ToggleButton
+                x:Name="DireButton"
+                
+                BackgroundColor="#1C1C1C"
+                CornerRadius="30"
+                
+                BorderColor="#303030"
+                BorderWidth="1"
+                
+                TextColor="White"
+                Text="{local:Translate PickChoicePageDireButton}"
+                
+                AbsoluteLayout.LayoutFlags="All"
+                AbsoluteLayout.LayoutBounds="0.842,0.373,0.34,0.08"
+                
+                Clicked="onDireClicked"
+                IsToggled="False"
+            />
+
+            <local:ToggleButton
+                x:Name="EnemyPickButton"
+                BackgroundColor="#303030"
+                CornerRadius="30"
+                
+                BorderColor="#303030"
+                BorderWidth="1"
+                
+                TextColor="White"
+                Text="{local:Translate PickChoicePageOpponentPicked}"
+                
+                AbsoluteLayout.LayoutFlags="All"
+                AbsoluteLayout.LayoutBounds="0.842,0.545,0.34,0.08"
+                
+                IsToggled="True"
+                
+                Clicked="onEnemyClicked"
+                
+            />
+            <local:ToggleButton
+                x:Name="YouPickButton"
+                BackgroundColor="#1C1C1C"
+                CornerRadius="30"
+                
+                BorderColor="#303030"
+                BorderWidth="1"
+                
+                TextColor="White"
+                Text="{local:Translate PickChoicePageYouPicked}"
+                
+                AbsoluteLayout.LayoutFlags="All"
+                AbsoluteLayout.LayoutBounds="0.169,0.545,0.34,0.08"
+                
+                IsToggled="False"
+                
+                Clicked="onYouClicked"
+            />
+
+        </AbsoluteLayout> 
+        
+    </ContentPage.Content>
+</ContentPage>
